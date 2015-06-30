@@ -1,0 +1,139 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+			/*------------------------------*/
+			/*			General Styles		*/
+			/*------------------------------*/
+
+h1 {
+	font-weight: 100;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.full-width {
+	margin: 0 auto;
+	padding: 20px;
+}
+
+			/*------------------------------*/
+			/*			Header				*/
+			/*------------------------------*/
+
+header.full-width {
+	margin-top: 5vh;
+}
+
+			/*------------------------------*/
+			/*			Main				*/
+			/*------------------------------*/
+
+.main-advertising {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #003d7c;
+	height: 372px;
+}
+.stopper {
+	background-image: url(../img/s.png);
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+}
+
+.stopper-main-info {
+	text-align: center;
+}
+.stopper-main-info > *{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+	color: #fff;
+	text-align: left;
+}
+.life-must {
+	float: right;
+}
+
+			/*------------------------------*/
+			/*			Footer				*/
+			/*------------------------------*/
+
+@media screen and (min-width: 768px) {
+	.full-width {
+		padding: 20px;
+		width: 75%;
+	}
+	.stopper-main-info {
+		margin-top: 100px;
+		font-size: 26px;
+	}
+	.stopper-main-info > img {
+		margin-right: 20px;
+	}
+}
+@media screen and (max-width: 400px) {
+	footer .full-width img:first-child,
+	footer .full-width img:last-child {
+		width: 90%;
+		max-width: 90%;
+		text-align: center;
+		display: block;
+		margin: 0 auto;
+		float:inherit;
+		margin-bottom: 10px;
+	}
+	.stopper-main-info {
+		margin-top: 50px;
+	}
+	.stopper-main-info > * {
+		display: block;
+		margin-top: 20px;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 768px){
+	.stopper-main-info > *{
+		vertical-align: middle;
+	}
+	.stopper-main-info {
+		margin-top: 50px;
+	}
+}
+@media screen and (max-width: 991px){
+	footer .full-width img:first-child {
+		max-width: 30%;
+	}
+	footer .full-width img:last-child {
+		max-width: 60%;
+	}
+}
+@media screen and (min-width: 991px){
+	.full-width {
+		width: 80%;
+	}
+	.stopper-main-info {
+		margin-top: 100px;
+		font-size: 26px;
+	}
+	header.full-width {
+		margin-top: 5vh;
+	}
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+	footer img {
+		max-width: 60%;
+	}
+}
+@media screen and (min-width: 1200px){
+
+	.stopper-main-info {
+		font-size: 32px;
+	}
+	header.full-width {
+		margin-top: 5vh;
+	}
+}

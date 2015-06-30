@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'BrushScriptStd';
+  src: url('BrushScriptStd.eot?#iefix') format('embedded-opentype'),  url('BrushScriptStd.otf')  format('opentype'),
+	     url('BrushScriptStd.woff') format('woff'), url('BrushScriptStd.ttf')  format('truetype'), url('BrushScriptStd.svg#BrushScriptStd') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

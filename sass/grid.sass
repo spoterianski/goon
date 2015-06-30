@@ -1,0 +1,152 @@
+$break-small: 320px
+$break-large: 1200px
+$break-middle: 960px
+
+.cols
+	float: left
+
+.row,
+.container
+	&:before
+		content: " "
+		display: table
+	&:after
+		content: " "
+		display: table
+		clear: both
+
+.text-right
+	text-align: right
+
+.text-center
+	text-align: center
+
+.text-left
+	text-align: left
+
+.cols.col-1,
+.cols.col-2,
+.cols.col-3,
+.cols.col-4,
+.cols.col-5,
+.cols.col-6,
+.cols.col-7,
+.cols.col-8,
+.cols.col-9,
+.cols.col-10,
+.cols.col-11,
+.cols.col-12,
+.cols.col-md-1,
+.cols.col-md-2,
+.cols.col-md-3,
+.cols.col-md-4,
+.cols.col-md-5,
+.cols.col-md-6,
+.cols.col-md-7,
+.cols.col-md-8,
+.cols.col-md-9,
+.cols.col-md-10,
+.cols.col-md-11,
+.cols.col-md-12
+	position: relative
+	min-height: 1px
+	padding-right: 15px
+	padding-left: 15px
+	box-sizing: border-box
+	-webkit-box-sizing: border-box
+
+@media screen and (min-width: $break-middle + 1px)
+	.col-1
+		width: 100%/(12/1)
+
+	.col-2
+		width: 100%/(12/2)
+
+	.col-3
+		width: 100%/(12/3)
+
+	.col-4
+		width: 100%/(12/4)
+
+	.col-5
+		width: 100%/(12/5)
+
+	.col-6
+		width: 100%/(12/6)
+
+	.col-7
+		width: 100%/(12/7)
+
+	.col-8
+		width: 100%/(12/8)
+
+	.col-9
+		width: 100%/(12/9)
+
+	.col-10
+		width: 100%/(12/10)
+
+	.col-11
+		width: 100%/(12/11)
+
+	.col-12
+		width: 100%/(12/12)
+
+@media screen and (min-width: $break-middle + 1px)
+	.col-offset-1
+		margin-left: 100%/(12/1)
+
+	.col-offset-2
+		margin-left: 100%/(12/2)
+
+	.col-offset-3
+		margin-left: 100%/(12/3)
+
+	.col-offset-4
+		margin-left: 100%/(12/4)
+
+	.col-offset-5
+		margin-left: 100%/(12/5)
+
+	.col-offset-6
+		margin-left: 100%/(12/6)
+
+	.col-offset-7
+		margin-left: 100%/(12/7)
+
+	.col-offset-8
+		margin-left: 100%/(12/8)
+
+	.col-offset-9
+		margin-left: 100%/(12/9)
+
+	.col-offset-10
+		margin-left: 100%/(12/10)
+
+	.col-offset-11
+		margin-left: 100%/(12/11)
+
+	.col-offset-12
+		margin-left: 100%/(12/12)
+
+@media screen and (max-width: $break-middle)
+	.col-1,
+	.col-2,
+	.col-3,
+	.col-4,
+	.col-5,
+	.col-6,
+	.col-7,
+	.col-8,
+	.col-9,
+	.col-10,
+	.col-11,
+	.col-12
+		width: 100%
+
+@media screen and (min-width: 670px) and (max-width: 960px)
+
+	.col-md-4
+		width: 100%/(12/4)
+	.col-md-5
+		width: 100%/(12/5)

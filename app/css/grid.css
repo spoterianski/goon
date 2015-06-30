@@ -1,0 +1,126 @@
+.cols {
+  float: left; }
+
+.row:before,
+.container:before {
+  content: " ";
+  display: table; }
+
+.row:after,
+.container:after {
+  content: " ";
+  display: table;
+  clear: both; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.cols.col-1,
+.cols.col-2,
+.cols.col-3,
+.cols.col-4,
+.cols.col-5,
+.cols.col-6,
+.cols.col-7,
+.cols.col-8,
+.cols.col-9,
+.cols.col-10,
+.cols.col-11,
+.cols.col-12,
+.cols.col-md-1,
+.cols.col-md-2,
+.cols.col-md-3,
+.cols.col-md-4,
+.cols.col-md-5,
+.cols.col-md-6,
+.cols.col-md-7,
+.cols.col-md-8,
+.cols.col-md-9,
+.cols.col-md-10,
+.cols.col-md-11,
+.cols.col-md-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+@media screen and (min-width: 961px) {
+  .col-1 {
+    width: 8.33333%; }
+  .col-2 {
+    width: 16.66667%; }
+  .col-3 {
+    width: 25%; }
+  .col-4 {
+    width: 33.33333%; }
+  .col-5 {
+    width: 41.66667%; }
+  .col-6 {
+    width: 50%; }
+  .col-7 {
+    width: 58.33333%; }
+  .col-8 {
+    width: 66.66667%; }
+  .col-9 {
+    width: 75%; }
+  .col-10 {
+    width: 83.33333%; }
+  .col-11 {
+    width: 91.66667%; }
+  .col-12 {
+    width: 100%; } }
+
+@media screen and (min-width: 961px) {
+  .col-offset-1 {
+    margin-left: 8.33333%; }
+  .col-offset-2 {
+    margin-left: 16.66667%; }
+  .col-offset-3 {
+    margin-left: 25%; }
+  .col-offset-4 {
+    margin-left: 33.33333%; }
+  .col-offset-5 {
+    margin-left: 41.66667%; }
+  .col-offset-6 {
+    margin-left: 50%; }
+  .col-offset-7 {
+    margin-left: 58.33333%; }
+  .col-offset-8 {
+    margin-left: 66.66667%; }
+  .col-offset-9 {
+    margin-left: 75%; }
+  .col-offset-10 {
+    margin-left: 83.33333%; }
+  .col-offset-11 {
+    margin-left: 91.66667%; }
+  .col-offset-12 {
+    margin-left: 100%; } }
+
+@media screen and (max-width: 960px) {
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 {
+    width: 100%; } }
+
+@media screen and (min-width: 670px) and (max-width: 960px) {
+  .col-md-4 {
+    width: 33.33333%; }
+  .col-md-5 {
+    width: 41.66667%; } }
