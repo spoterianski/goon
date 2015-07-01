@@ -17,7 +17,7 @@ path = {
 		},
 		src: { //Пути откуда брать исходники
 				html: 'src/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
-				js: 'src/js/main.js',//В стилях и скриптах нам понадобятся только main файлы
+				js: 'src/js/**/*.js',//В стилях и скриптах нам понадобятся только main файлы
 				style: 'src/style/main.scss',
 				img: 'src/img/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
 				fonts: 'src/fonts/**/*.*',
@@ -68,13 +68,24 @@ gulp.task('html:build', function () {
 gulp.task('watch', function() {
 	gulp.watch(path.watch.html, ['html:build']);
 	gulp.watch(path.watch.css, ['css:build']);
+	gulp.watch(path.watch.js, ['js:build']);
 })
 
 //css copy 
 gulp.task('css:build', function() {
     gulp.src(path.src.css)
+        // .pipe(uncss({
+        //     html: ['src/**/*.html']
+        // }))
         .pipe(gulp.dest(path.app.css))
         .pipe(notify("Build css"));
+});
+
+//js bulid
+gulp.task('js:build', function() {
+    gulp.src(path.src.js)
+        .pipe(gulp.dest(path.app.js))
+        .pipe(notify("Js has built"));
 });
 
 //img
@@ -88,4 +99,4 @@ gulp.task('img:copy', function() {
 
 
 //default
-gulp.task('default', ['connect', 'html:build', 'watch', 'css:build']);
+gulp.task('default', ['connect', 'html:build', 'watch', 'css:build', 'js:build']);

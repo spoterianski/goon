@@ -123,6 +123,33 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .menu-btn {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #000;
+    width: 40px;
+    height: 40px;
+    float: right;
+    border-radius: 5px;
+    padding: 2px 2px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    z-index: 1;
+  }
+  .collapse-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width:  768px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 600px) and (max-width: 767px) {
   .main-nav li {
     width: 49%;
@@ -172,10 +199,6 @@
 }
 
 @media screen and (min-width: 961px) {
-  .menu-btn {
-    display: none;
-  }
-
   .site-navigation {
     text-align: right;
   }
@@ -188,7 +211,7 @@
     text-align: center;
   }
 
-  .footer-inline-block .collapse {
+  .footer-inline-block .collapse.list-show {
     display: none;
   }
 
@@ -227,22 +250,6 @@
     background-image: url(../img/bg-main-960.jpg);
     -webkit-background-size: auto;
     background-size: auto;
-  }
-
-  .menu-btn {
-    position: absolute;
-    top: 40px;
-    right: 20px;
-    background-color: #fff;
-    border: 1px solid #000;
-    width: 40px;
-    height: 40px;
-    float: right;
-    border-radius: 5px;
-    padding: 2px 2px;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    z-index: 1;
   }
 
   .menu-btn > div {
